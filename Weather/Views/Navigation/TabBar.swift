@@ -1,10 +1,3 @@
-//
-//  TabBar.swift
-//  Weather
-//
-//  Created by Ioanna Karageorgou on 10/7/23.
-//
-
 import SwiftUI
 
 struct TabBar: View {
@@ -12,6 +5,17 @@ struct TabBar: View {
     
     var body: some View {
         ZStack {
+            // MARK: Arxh Shape
+            Arc()
+                .fill(Color.tabBarBackground)
+                .frame(height: 88)
+                .overlay {
+                    // MARK: Arch Border
+                    Arc()
+                        .stroke(Color.tabBarBorder, lineWidth: 0.5)
+                }
+            
+            
             // MARK: Tab Items
             HStack {
                 // MARK: Expand Button
