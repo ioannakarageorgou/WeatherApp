@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01111A332A5C3312001E94CE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01111A322A5C3312001E94CE /* Extensions.swift */; };
+		01111A352A5C3572001E94CE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01111A342A5C3572001E94CE /* HomeView.swift */; };
+		01111A372A5C3C9E001E94CE /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01111A362A5C3C9E001E94CE /* TabBar.swift */; };
 		01241EBB2A5C055B0065D593 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01241EBA2A5C055B0065D593 /* WeatherApp.swift */; };
 		01241EBD2A5C055B0065D593 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01241EBC2A5C055B0065D593 /* ContentView.swift */; };
 		01241EBF2A5C055C0065D593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01241EBE2A5C055C0065D593 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01111A322A5C3312001E94CE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		01111A342A5C3572001E94CE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		01111A362A5C3C9E001E94CE /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		01241EB72A5C055B0065D593 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01241EBA2A5C055B0065D593 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		01241EBC2A5C055B0065D593 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01111A2E2A5C3288001E94CE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				01241EBC2A5C055B0065D593 /* ContentView.swift */,
+				01111A342A5C3572001E94CE /* HomeView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		01111A2F2A5C3290001E94CE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				01111A362A5C3C9E001E94CE /* TabBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		01111A302A5C3298001E94CE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		01111A312A5C32A3001E94CE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		01241EAE2A5C055B0065D593 = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +92,6 @@
 				01241EC82A5C07AA0065D593 /* Views */,
 				01241EC92A5C07B80065D593 /* Models */,
 				01241ECA2A5C07C30065D593 /* Utils */,
-				01241EBC2A5C055B0065D593 /* ContentView.swift */,
 				01241EBE2A5C055C0065D593 /* Assets.xcassets */,
 				01241EC02A5C055C0065D593 /* Preview Content */,
 			);
@@ -73,6 +109,10 @@
 		01241EC82A5C07AA0065D593 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				01111A2E2A5C3288001E94CE /* Main */,
+				01111A2F2A5C3290001E94CE /* Navigation */,
+				01111A302A5C3298001E94CE /* Detail */,
+				01111A312A5C32A3001E94CE /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +127,7 @@
 		01241ECA2A5C07C30065D593 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				01111A322A5C3312001E94CE /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -162,7 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01241EBD2A5C055B0065D593 /* ContentView.swift in Sources */,
+				01111A352A5C3572001E94CE /* HomeView.swift in Sources */,
+				01111A332A5C3312001E94CE /* Extensions.swift in Sources */,
 				01241EBB2A5C055B0065D593 /* WeatherApp.swift in Sources */,
+				01111A372A5C3C9E001E94CE /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
