@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ForecastView: View {
+    var bottomSheetTranslationProrated: CGFloat = 1
     var body: some View {
         ScrollView {
             
@@ -16,7 +17,7 @@ struct ForecastView: View {
             offsetY: 1,
             blur: 0,
             blendMode: .overlay,
-            opacity: 1
+            opacity: 1 - bottomSheetTranslationProrated
         )
         .overlay {
             // MARK: Bottom Sheet Separator
