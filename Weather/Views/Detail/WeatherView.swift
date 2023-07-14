@@ -1,10 +1,3 @@
-//
-//  WeatherView.swift
-//  Weather
-//
-//  Created by Ioanna Karageorgou on 13/7/23.
-//
-
 import SwiftUI
 
 struct WeatherView: View {
@@ -13,6 +6,19 @@ struct WeatherView: View {
             // MARK: Background
             Color.background
                 .ignoresSafeArea()
+            
+            // MARK: Weather Widgets
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 20) {
+                    ForEach(Forecast.cities) { forecast in
+                        WeatherWidget(forecast: forecast)
+                    }
+                }
+            }
+            .safeAreaInset(edge: .top) {
+                EmptyView()
+                    .frame(height: 110)
+            }
         }
         .overlay {
             // MARK: Navigation Bar
